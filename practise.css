@@ -1,0 +1,38 @@
+.container
+{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 10% 80% 10% ;
+    grid-template-rows: 10% 80% 10%;
+    grid-gap: 10px;
+
+}
+.header
+{
+    background-color: aquamarine;
+   grid-column: 1/4;
+}
+.side-nav
+{
+    background-color: aqua;
+    
+}
+.content
+{
+    background-color: blueviolet;
+}
+.aside
+{
+background-color: brown;
+}
+.footer
+{
+background-color: burlywood;
+grid-column: 1/4;
+}
+.container>div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
