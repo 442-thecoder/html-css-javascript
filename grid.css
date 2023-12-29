@@ -1,0 +1,56 @@
+.fastfood
+{
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows:  50% 50% 50% 50%;
+    gap: 20px;
+   
+   
+    
+}
+.yummy
+{
+    background-color: chocolate;
+    grid-column: 1/4;
+    border-radius: 100px;
+}
+.manchuria
+{
+    background-color:olive;
+    grid-column: 1/3;
+    border-radius: 50px;
+    
+}
+.noodles
+{
+    background-color: brown;
+    border-radius: 50px;
+
+}
+.friedrice
+{
+    background-color: blueviolet;
+    border-radius: 50px;
+}
+.omlet
+{
+    background-color: coral;
+    grid-column:1/3 ;
+    border-radius: 50px;
+}
+.fastfood>div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fastfoods
+{
+background-color: crimson;
+border-radius:50px;
+grid-column: 1/4;
+position: fixed;
+size: 100px;
+}
