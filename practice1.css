@@ -1,0 +1,128 @@
+html{
+    scroll-behavior: smooth;
+}
+.head
+{
+    background-color: rgba(151, 122, 90, 0.779);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+   
+}
+
+
+.h2{
+    list-style-type: none;
+   
+}
+.head img{
+    padding: 10px;
+}
+.head1 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+    
+}
+ul{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+   
+}
+.head1 a{
+    text-decoration: none;
+   
+}
+.og{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    text-align: justify;
+}
+
+.salaar{
+   justify-content: center;
+   text-align: justify;
+   display: grid;
+   
+
+ 
+}
+.salaar p{
+    padding: 50px;
+    
+
+}
+.pushpa{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+   
+}
+#pushpatit{
+text-align: center;
+}
+form{
+   text-align: center;
+   justify-content: center;
+   padding: 50px 100px;
+   box-shadow: 5px 5px;
+   
+
+   
+   
+   
+}
+footer
+{
+    background-color: aquamarine;
+    height: 100px;
+}
+form{
+    
+}
+#simg{
+    border: 5px solid white;
+}
+#img1{
+    border: 5px solid rgba(8, 8, 6, 0.975);
+}
+#rise{
+    border: 5px solid rgb(97, 41, 6);
+    background-repeat: no-repeat;
+}
+#stimg{
+    background-repeat: no-repeat;
+   
+}
+#ogimg{
+    margin: 40px 30px;
+}
+#saimg{
+    margin: 40px 30px;
+}
+#puimg{
+    margin: 40px 30px;
+}
+#foimg{
+    margin: 40px 30px;
+}
+.gotop{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 0px;
+    right: 0px;
+   background-color:#27ae60 ;
+
+   text-decoration: none;
+   text-align: center;
+   line-height: 50px;
+   color: white;
+   font-size: 22px;
+}

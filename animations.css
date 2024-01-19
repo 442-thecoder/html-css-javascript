@@ -1,0 +1,92 @@
+.header{
+    background-color: green;
+    height: 150px;
+    width: 100%;
+}
+.img1
+{
+    height: 140px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: auto;
+    border-radius: 05px;
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.li{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 60px;
+    text-align: end;
+    margin-left: 900px;
+    
+}
+.aa
+{display: flex;
+
+
+    align-items: right;
+}
+.box
+{
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    animation: reverse;
+    animation-name: realme;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    background-color: brown;
+    animation-iteration-count: infinite;
+    
+   
+}
+@keyframes realme {
+0%
+{
+    top: 300px;
+    left: 100px;
+   
+}
+50%
+{
+    border-radius: 100px;
+    background-color: chartreuse;
+}
+100%
+{
+   transl
+}
+}
+.box:hover
+{
+    background-color: blue;
+    transition:3s all ease 10s ;
+    transform: translateY(200px);
+    animation: home 5s ease 5s infinite forwards fill-mode;
+}
+.ho:hover
+{
+    background-color: goldenrod;
+    height: 20px;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+ 
+   
+}
+@keyframes home{
+    0%,100%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}

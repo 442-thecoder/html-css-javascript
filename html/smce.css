@@ -1,0 +1,226 @@
+.head{
+    background-color: black;
+    height: 40px;
+    padding: 5px;
+  
+    
+ 
+}
+.ecap
+{
+    color: white;
+    border: 1px solid;
+    padding: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: orange;
+    
+}
+.ecap a{
+    text-decoration: none;
+}
+.icons{
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: end;
+    
+  
+}
+.hello{
+    color: white;
+}
+.head1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+ .head01{
+    padding: 40px;
+    
+}
+.head02{
+    margin-left: 90px;
+    display: grid;
+    grid-template-columns: 200px 1000px;
+    
+}
+.home a{
+    text-decoration: none;
+    color: white;
+}
+.head2{
+    background-color: rgb(2, 2, 77);
+    height: 100px;
+    
+    
+}
+.abo{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.aca{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.dep{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.fee{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.inf{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.gal{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.na{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.naa{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.aic{
+    background-color:  rgb(2, 2, 77);
+    color: white;
+    border: none;
+}
+.head002{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+.sec2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+.sec01 img{
+    padding: 20px;
+}
+.sec02{
+     text-align: justify;
+}
+.sec3{
+    padding: 50px;
+}
+#card1{
+   padding: 35px 450px;
+   
+}
+
+#cimg{
+    padding: 10px;
+    border-radius: 10px;
+}
+.buttons h6{
+    text-align: center;
+}
+.buttons h3{
+    text-align: center;
+}
+#button{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 40px;
+    gap: 20px;
+    margin: 50px;   
+}
+#button1{
+    background-color: green;
+}
+#button1:hover{
+    background-color: goldenrod;
+}
+#h4{
+   text-align: center;
+    
+}
+#dimg{
+    align-items: center;
+    background-color: white;
+}
+.p5{
+    text-align: center;
+}
+.chairman{
+   height:350px;
+   width: 1400px;
+}
+.job h2{
+    text-align: center;
+    align-items: center;
+    color: maroon;
+}
+.placements{
+    display: flex;
+    text-align: justify;
+    padding: 50px;
+    background-color:whitesmoke;
+}
+.class{
+    padding: 200px;
+}
+#maplink{
+   text-decoration: none;
+}
+#mail{
+  
+}
+.footer{
+    background-color: rgb(2, 2, 77) ;
+    height: 120px;
+}
+.copy{
+    color: white;
+    text-align: center;
+}
+.copy1{
+    color: white;
+    text-align: center;
+   
+  
+}
+.footer{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+align-items: center;
+}
+#address{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;align-items: center;
+    text-align: center;
+}
+.place{
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+.sec3 h1{
+    text-align: center;
+    
+}
+.card{
+border: 5px solid white;
+}
+.card a{
+    text-decoration: none;
+}

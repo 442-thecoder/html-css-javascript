@@ -1,0 +1,51 @@
+#kabaddi
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+   padding-left: 80px;
+}
+.kbdimg
+{
+   border-radius: 10px;
+    margin: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.head
+{
+    background-color: rgba(151, 122, 90, 0.779);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+.h2{
+    list-style-type: none;
+   
+}
+.head img{
+    padding: 10px;
+}
+.head1 ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+    
+}
+ul{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+   
+}
+.head1 a{
+    text-decoration: none;
+}
+#nav{
+    padding: 20px;
+}
