@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg-changer</title>
+    <style>
+    
+    .dark
+    {
+        background-color: black;
+        color: white;
+        
+    }
+    .btn{
+        
+        margin-left: 500px;
+        margin-top: 250px;
+    }
+    
+    
+   
+    </style>
+</head>
+<body>
+   <button onclick="dark()">dark</button>
+   <div id="divv"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestiae dignissimos sunt tempore obcaecati deserunt expedita illo doloremque, ad totam esse assumenda distinctio quo voluptate. Provident voluptate fuga autem! Rem numquam in illum, quis maiores dolorum sunt officiis, beatae delectus ab assumenda enim, reprehenderit nisi commodi eum eligendi autem sint.</p></div>
+   <img src="love1" id="image" alt="">
+    <button  class="btn" onclick="changeimage('love2')">change image</button>
+    <script>
+        
+        const img = document.getElementById('image');
+        function changeimage(filename)
+        {
+            
+            img.setAttribute("src",filename)
+           
+           
+        }
+        const maindiv = document.getElementById('divv')
+        function dark()
+        {
+          maindiv.classList.toggle('dark')
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#counter{
+    box-shadow: 5px 5px 5px black;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -45,6 +45,7 @@
     grid-template-columns: 200px 1000px;
     
 }
+
 .home a{
     text-decoration: none;
     color: white;
@@ -52,6 +53,7 @@
 .head2{
     background-color: rgb(2, 2, 77);
     height: 100px;
+    
     
     
 }
@@ -112,6 +114,10 @@
     justify-content: center;
     padding: 0px 50px;
 }
+#marquee{
+    margin-right: 50px;
+    
+}
 .sec01 img{
     padding: 20px;
 }
@@ -161,9 +167,12 @@
     text-align: center;
 }
 .chairman{
-   height:350px;
-   width: 1400px;
+   height:300px;
+   width: 1200px;
+   margin-left: 30px;
+   
 }
+
 .job h2{
     text-align: center;
     align-items: center;
@@ -224,3 +233,112 @@ border: 5px solid white;
 .card a{
     text-decoration: none;
 }
+@media(max-width:480px){
+    .sec2{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .sec02{
+        padding: 30px;
+    }
+    .sec02 p{
+      
+    }
+    .card{
+        padding: 30px;
+    }
+    #h4{
+        font-size: smaller;
+    }
+    .p5{
+        font-size: smaller;
+        padding: 0px 80px;
+        
+    }
+    .chairman{
+        width: 400px;
+        height: 200px;
+        margin-left: 40px;
+        
+    }
+    .job h2{
+      font-size: 20px;
+    }
+    .job img{
+        height: 200px;
+        margin-left: 30px;
+      }
+      .placements{
+        display: flex;
+        flex-direction: column;
+      }
+      #address{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        
+      }
+      #address p{
+        padding: 0px 30px;
+        text-align: center;
+        font-size: 15px;
+
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      #carousel{
+        height: 150px;
+        width: 350px;
+        margin-left: 70px;
+      }
+      .head02{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+      }
+      .head1{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .head01{
+        margin-left: 70px;
+      }
+      .head1 img{
+              height: 150px;
+              width: 350px;
+              margin-left: 70px;
+      }
+      .icons{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+      }
+      .icons a{
+        align-items: center;
+      }
+      .head{
+        height: 150px;
+
+      }
+      #ecap{
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 5px;
+      }
+      .head002{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .head2{
+        height: 280px;
+      }
+}
+
+
