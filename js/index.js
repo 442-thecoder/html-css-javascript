@@ -19,7 +19,7 @@ function incr()
         count.textContent = c;
         if(c%2==0)
         {
-            print.textContent=console.log('even');
+            document.getElementById('print').textContent="Even"
             
         }
         else
