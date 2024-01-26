@@ -1,0 +1,59 @@
+
+body{
+    
+    display: flex;
+    flex-direction:column ;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    
+   
+    
+}
+form
+{
+    display: flex;
+    flex-direction: row;
+}
+#regForm
+{
+    padding-top: 50px;
+}
+button
+{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+    
+}
+#details
+{
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: white;
+
+}
+body img{
+    border-radius: 50px;
+}
+.input
+{
+    border: 1px solid white;
+    background-color: white;
+    
+}
+a{
+    text-decoration: none;
+    font-size: smaller;
+}
+h1{
+    color: ;
+}
+button:hover
+{
+    transform: scale(1.2);
+}
+
