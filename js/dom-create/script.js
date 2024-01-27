@@ -1,4 +1,5 @@
 const main = document.getElementById('players')
+const filt = document.getElementById('filter')
 const players = [
 
 {
@@ -222,7 +223,5 @@ players.forEach(function(player){
     image.src=player.imageLink
     major.append(image,n,coun,title,yr) 
     major.classList.add('player')
-    main.appendChild(major)
-
-    
+    main.appendChild(major) 
 })
