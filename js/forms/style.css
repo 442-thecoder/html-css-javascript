@@ -48,10 +48,9 @@ body img{
 a{
     text-decoration: none;
     font-size: smaller;
+    
 }
-h1{
-    color: ;
-}
+
 button:hover
 {
     transform: scale(1.2);

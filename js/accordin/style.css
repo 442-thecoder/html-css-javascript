@@ -1,0 +1,128 @@
+body
+{
+    background-color: black;
+}
+h1{
+    text-align: center;
+}
+#players
+{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 20px;
+}
+.player
+{
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px 30px  white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    height: 150px;
+    width: 200px;
+    border-radius: 5px;
+}
+.player:hover
+{
+    background-color: wheat;
+    transform: scale(1.1);
+}
+img:hover{
+    transform: scale(1.1)  ;
+    
+}
+h1{
+    color: red;
+}
+#acc1
+{
+    background-color: black;
+}
+title h2{
+    font-size:20px;
+}
+title
+{
+    font-size: 20px;
+}
+#xmark
+{
+    height: 30px;
+
+}
+#modal
+{
+    display: none;
+    border: 1px solid;
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 8px 5px 6px black;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 100px;
+} 
+#modal-body img
+{
+    padding-top: 60px;
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px 20px black;
+
+}
+#modal-header
+{
+    margin-top: 50px;
+}
+#btn
+{
+    border-radius: 50px; 
+    border: 1px white;
+    padding-bottom: 5px;
+
+}
+
+#regForm
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+}
+#imgf
+{
+    height: 200px;
+    width: 200px;
+    transform: none;
+    padding-top: 20px;
+}
+
+#log
+{
+    margin-left: 40px;
+}
+
+.input
+{
+    border: 1px solid white;
+    background-color: white;
+    
+}
+#anc{
+    text-decoration: none;
+    font-size: smaller;
+    color: black;
+}
+#lbtn
+{
+    border-radius: 20px;
+    border: 1px white;
+    background-color: chartreuse;
+}
