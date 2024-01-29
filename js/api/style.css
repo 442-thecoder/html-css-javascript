@@ -1,0 +1,60 @@
+body
+{
+    background-color: darkolivegreen;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+    background-color: darkolivegreen;
+ 
+
+}
+.product
+{
+    align-items: center;
+    justify-content: center;
+   box-sizing: border-box;
+   box-shadow: 5px 5px 20px;
+    padding: 50px;
+   
+    
+}
+img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    
+
+}
+.product:hover
+{
+    transform: scaley(1.2) ;
+    background-color: white;
+
+}
+img:hover
+{
+    transform: rotateY(180deg);
+}
+h1
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:black ;
+    color: white;
+    
+}
+button
+{
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
