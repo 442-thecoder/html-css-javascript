@@ -1,0 +1,68 @@
+body
+{
+    background-image: url('https://burst.shopifycdn.com/photos/city-lights-through-rain-window.jpg?width=1000&format=pjpg&exif=0&iptc=0');
+    
+   
+}
+#products
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 50px;
+   
+    
+}
+.product
+{
+    height: 160px;
+    width: 750px;
+    align-items: center;
+    justify-content: center;
+   justify-items: center;
+   border: 5px solid white;
+   padding: 20px;
+   border-radius: 20px;
+   background-color: black;
+   box-shadow: 10px 10px 20px black;
+   display: flex;
+   flex-direction: column;
+   filter: blur(3px);
+  
+
+   
+
+}
+.product:hover
+{
+  cursor: crosshair;
+
+}
+.product p 
+{
+    color:white;
+}
+.product h3
+{
+    color: white;
+}
+img{
+    align-items: center;
+    margin-left: 280px;
+}
+.product:hover
+{
+    transform: scalex(1.1) ;
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 10px cyan,0 0 200px cyan;
+    filter: none;
+    transition: all 3s ease;
+    
+}
+.product h2 
+{
+    color: white;
+}
+
