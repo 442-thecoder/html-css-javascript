@@ -1,9 +1,12 @@
 const count = document.getElementById('count')
+const print1 = document.getElementById('print1')
 const print = document.getElementById('print')
 document.getElementById('print')
 console.log('print.textcontent')
+document.getElementById('print1')
+console.log('print1.textcontent')
 document.getElementById('count')
-console.log(count.textContent)
+console.log(count.textContent)    
 let c = 0
 function incr()
 {
@@ -24,7 +27,7 @@ function incr()
         }
         else
         {
-            print.textContent=console.log('odd');
+            document.getElementById('print').textContent="odd"
         }
        
     }
@@ -42,11 +45,11 @@ function decr()
         count.textContent = c;
         if(c%2==0)
         {
-            print.textContent=console.log('even');
+            document.getElementById('print').textContent="Even"
         }
         else
         {
-            print.textContent=console.log('odd');
+            document.getElementById('print').textContent="odd"
         }
         
     }

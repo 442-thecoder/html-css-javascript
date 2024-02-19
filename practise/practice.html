@@ -1,0 +1,220 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        #table
+        {
+            margin-left: 550px;
+            margin-top: 250px;
+            box-shadow: 5px 5px 20px 5pxaquamarine;
+            height: 250px;
+            width: 200px;
+            padding-top: 10px;
+           
+        }
+        #count
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            color: aquamarine;
+        }
+        #print
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            color: aquamarine;
+        } #print1
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            color: aquamarine;
+        }
+        #btn{
+            align-items: center;
+           margin-left: 20px;
+           color: aquamarine;
+           background-color: aquamarine;
+           border:  aquamarine;
+        }
+        #table:hover
+        {
+            background-color: white;
+
+        
+        #count
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            color:white;
+            background-color: black;
+
+        }
+        #print
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            color: white;
+            background-color: black;
+        } #print1
+        {
+            align-items: center;
+            padding: 10px;
+            margin-left: 25px;
+            color: white;
+            background-color: black;
+        }
+        #btn
+        {
+            align-items: center;
+           margin-left: 20px;
+           color:white;
+           background-color: black;
+           border: black;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="table">
+    <div><p id="print1"></p></div>
+    <div><p id="print"></p></div>
+     <p id="count">0</p>
+    <div>
+    <button id="btn" onclick="add()">+</button>
+    <button id="btn" onclick="sub()">-</button>
+    <button id="btn" onclick="res()">res</button>
+    </div>
+    </div>
+<script>
+   const print = document.getElementById('print')
+   const print1 = document.getElementById('print1')
+   const count = document.getElementById('count')
+   document.getElementById('print')
+   document.getElementById('print1')
+   console.log(print.textcontent)
+   console.log(print1.textcontent)
+   document.getElementById('count')
+   console.log(count.textContent)
+   let c = 0;
+   let count1=0;
+   function add()
+   {     console.log("incerement called")
+       if(c>=5)
+       {
+        alert("more than 5 is not allowed")
+       }
+       else
+       {
+        c++
+        count.textContent=c
+        if(c%2==0)
+        {
+            document.getElementById('print').textContent="even"
+        }
+        else
+        {
+            document.getElementById('print').textContent="odd"
+        }
+       }
+    for(i=2;i<c;i++)
+   {
+      if(c%i==0)
+      count1++;
+   }
+   if(count1 == 0)
+   {
+     document.getElementById('print1').textContent=" a prime"
+   }
+   else{
+    document.getElementById('print1').textContent="not prime"
+   }
+           
+       
+   }
+   function sub()
+   {
+    console.log("decrement called")
+       if(c<=0)
+       {
+        alert("less than 0 is not allowed")
+       }
+       else
+       {
+        c--
+        count.textContent=c
+        if(c%2==0)
+        {
+            document.getElementById('print').textContent="even"
+        }
+        else
+        {
+            document.getElementById('print').textContent="odd"
+        }
+       }
+   }
+   function res()
+   {
+       c=0
+       document.getElementById('count').textContent=0
+       document.getElementById('print').textContent=""
+       document.getElementById('print1').textContent=""
+
+   }
+</script> -->
+<!-- </body>
+</html> -->
+<!-- class inhertitence -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>
+            creating a class
+        </h1>
+    </div>
+    <script>
+        class woman
+        {
+            constructor(minor,major)
+            {
+                this.minor=below18;
+                this.major=above18;
+            }
+        }
+        const human = new woman(m,M)
+    </script>
+
+    <div>
+        <h2>inheritance</h2>
+        <script>
+            class men extends woman{
+                constructor(minor,major,men)
+                {
+                    this.men=men;
+                    super(minor,major);
+                }
+            }
+            const humans = new men(minor,major,men)
+        </script>
+    </div>
+</body>
+</html> -->
