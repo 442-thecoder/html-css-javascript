@@ -1,7 +1,7 @@
 const products = document.getElementById('productpage')
 const cartbtn = document.getElementById('cartbutton')
 cartbtn.addEventListener("click",checkout)
-fetch("https://fakestoreapi.com/products")
+fetch("https://fakestoreapi.com/products/")
 .then(function (res) {
     console.log(res)
     return res.json()
@@ -54,4 +54,25 @@ function addCart(e)
  {
     localStorage.setItem('cart', JSON.stringify(cart));
     window.location.href="./checkout.html"
+}
+
+function filter()
+{
+    let filter =document.getElementById('input').value.toUpperCase();
+    let item = document.getElementById('productpage');
+    let l = document.getElementsByTagName('h6');
+    
+    for (var i = 0;i<=l.length;i++)
+    {
+        let a = item[i].getElementsByTagName('h6')[0];
+         let value = a.innerHTML || a.innerText || a.textContent;
+         if(value.toUpperCase().indexOf(filter) > -1)
+         {
+            item[i].style.display="";
+         }
+         else
+         {
+            item[i].style.display="none";
+         }
+    }
 }
