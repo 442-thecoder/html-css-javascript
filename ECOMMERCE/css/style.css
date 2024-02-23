@@ -345,7 +345,10 @@ body{
     {
         display: block;
     }
-
+      #cr
+      {
+        width: 480px;
+      }
 
 
 
