@@ -3,7 +3,7 @@ html
     box-sizing: content-box;
 }
 img{
-    height: 200px;
+    height: 160px;
 }
 #pro-Detail
 {
@@ -187,6 +187,10 @@ img{
     {
             margin-bottom: 15px;
     }
+    #cr
+    {
+        width: 480px;
+    }
 
 
 
@@ -281,7 +285,7 @@ img{
     #loginbtn
     {
        margin-left: 60px;
-       margin-bottom: 20px;
+       margin-top: 20px;
     }
     #head01
     {
@@ -315,13 +319,12 @@ img{
     }
     #scroll
     {
-        margin-left: 0px;
-        width: 770px;
-        background-color: #b5c1b7;
+        margin-left: 760px;
+        
     }
     #cr
     {
-        width: 770px;
+        width: 820px;
     }
     #cart-checkout
     {
@@ -426,7 +429,7 @@ img{
     #loginbtn
     {
        margin-left: 180px;
-       margin-bottom: 20px;
+       margin-bottom: 0px;
     }
     #head01
     {
@@ -458,14 +461,13 @@ img{
         width: 20px;
         margin-bottom: 10px;
     }
-    /* #scroll
+    #scroll
     {
-        margin-left: 0px;
-        width: 1030px;
-        background-color: #b5c1b7;
-    } */
-    /* #cr
+        margin-left: 1020px;
+       
+    } 
+     #cr
     {
-        width: 1030px;
-    } */
+        width: 1080px;
+    } 
 }
