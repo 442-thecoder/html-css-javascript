@@ -56,23 +56,33 @@ function addCart(e)
     window.location.href="./checkout.html"
 }
 
+// function filter()
+// {
+//     let filter =document.getElementById('input').value.toUpperCase();
+//     let item = document.getElementById('productpage');
+//     let l = document.getElementsByTagName('h6');
+    
+//     for (var i = 0;i<=l.length;i++)
+//     {
+//         let a = item[i].getElementsByTagName('h6')[0];
+//          let value = a.innerHTML || a.innerText || a.textContent;
+//          if(value.toUpperCase().indexOf(filter) > -1)
+//          {
+//             item[i].style.display="";
+//          }
+//          else
+//          {
+//             item[i].style.display="none";
+//          }
+//     }
+// }
 function filter()
 {
-    let filter =document.getElementById('input').value.toUpperCase();
-    let item = document.getElementById('productpage');
-    let l = document.getElementsByTagName('h6');
-    
-    for (var i = 0;i<=l.length;i++)
+    const inp = document.getElementById('input')
+    const stn = document.getElementById('sbtn')
+    if(inp.value==pro.productLink)
+    data.filter((pro,index) =>
     {
-        let a = item[i].getElementsByTagName('h6')[0];
-         let value = a.innerHTML || a.innerText || a.textContent;
-         if(value.toUpperCase().indexOf(filter) > -1)
-         {
-            item[i].style.display="";
-         }
-         else
-         {
-            item[i].style.display="none";
-         }
-    }
+         return pro(inp.value==productLink)
+    });
 }

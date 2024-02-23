@@ -197,7 +197,7 @@ h5{
     justify-items: end;
     border-radius: 10px;
     background-color: white;
-    margin-left: 600px;
+    margin-left: 1200px;
     
 }
 body{
@@ -250,6 +250,10 @@ body{
         width: 480px;
         
        
+    }
+    #head02
+    {
+        display: flex;
     }
     #head1 ul
     {
@@ -335,7 +339,7 @@ body{
     }
     #scroll
     {
-        margin-left: 220px;
+        margin-left: 420px;
     }
     #head01
     {
@@ -360,14 +364,14 @@ body{
     #head
     {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         width: 770px;
         
        
     }
     #head1 ul
     {
-        gap: 40px;
+        gap: 20px;
     }
     .product
     {
@@ -376,6 +380,7 @@ body{
         justify-content: center;
         align-items: center;
         justify-items: center;
+        margin-top: 20px;
         
     }
     .product img
@@ -418,8 +423,12 @@ body{
     /* } */
     #loginbtn
     {
-       margin-left: 60px;
-       margin-bottom: 20px;
+       margin-left: 20px;
+       margin-bottom: 0px;
+    }
+    #head02
+    {
+        margin-top: 30px;
     }
     #head01
     {
@@ -453,9 +462,9 @@ body{
     }
     #scroll
     {
-        margin-left: 0px;
-        width: 770px;
-        background-color: #b5c1b7;
+        margin-left: 720px;
+        
+        
     }
     #cr
     {
@@ -476,7 +485,7 @@ body{
     #head
     {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         width: 1030px;
         
        
@@ -534,8 +543,12 @@ body{
     /* } */
     #loginbtn
     {
-       margin-left: 180px;
-       margin-bottom: 20px;
+       margin-left: 40px;
+       margin-top: 5px;
+    }
+    #head02
+    {
+        margin-top: 30px;
     }
     #head01
     {
@@ -569,9 +582,8 @@ body{
     }
     #scroll
     {
-        margin-left: 0px;
-        width: 1030px;
-        background-color: #b5c1b7;
+        margin-left: 960px;
+        
     }
     #cr
     {

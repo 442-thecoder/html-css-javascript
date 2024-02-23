@@ -148,7 +148,7 @@
     }
     #scroll
     {
-        margin-left: 220px;
+        margin-left: 420px;
     }
     #cart-checkout button
     {
@@ -237,7 +237,7 @@
     #loginbtn
     {
        margin-left: 60px;
-       margin-bottom: 20px;
+       margin-bottom: 0px;
     }
     #head01
     {
@@ -271,13 +271,12 @@
     }
     #scroll
     {
-        margin-left: 0px;
-        width: 770px;
-        background-color: #b5c1b7;
+        margin-left: 760px;
+      
     }
     #cr
     {
-        width: 770px;
+        width: 820px;
     }
     #cart-checkout
     {
@@ -368,7 +367,7 @@
     #loginbtn
     {
        margin-left: 180px;
-       margin-bottom: 20px;
+       margin-bottom: 10px;
     }
     #head01
     {
@@ -402,12 +401,11 @@
     }
     #scroll
     {
-        margin-left: 0px;
-        width: 1030px;
-        background-color: #b5c1b7;
+        margin-left: 1020px;
+       
     }
     #cr
     {
-        width: 1030px;
+        width: 1080px;
     }
 }
