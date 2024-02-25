@@ -6,7 +6,11 @@
     
  
 }
-.ecap
+#navbar
+{
+  display: none;
+}
+/* .ecap
 {
     color: white;
     border: 1px solid;
@@ -15,7 +19,7 @@
     box-sizing: border-box;
     background-color: orange;
     
-}
+} */
 .ecap a{
     text-decoration: none;
 }
@@ -190,9 +194,6 @@
 #maplink{
    text-decoration: none;
 }
-#mail{
-  
-}
 .footer{
     background-color: rgb(2, 2, 77) ;
     height: 120px;
@@ -233,33 +234,46 @@ border: 5px solid white;
 .card a{
     text-decoration: none;
 }
-@media(max-width:480px){
+@media(max-width:480px)
+{
+    header
+    {
+        width: 500px;
+    }
     .sec2{
         display: flex;
         flex-direction: column;
        
     }
-    .sec02{
-        padding: 30px;
+    .sec3
+    {
+        padding: 0px;
+        margin-top: 20px;
+        margin-left: 10px;
     }
-    .sec02 p{
-      
+    .sec02{
+        padding: 0px;
+    }
+    .sec01 img 
+    {
+      height: 300px;
+      width: 400px;
     }
     .card{
         padding: 30px;
     }
     #h4{
-        font-size: smaller;
+        font-size: 25px;
     }
     .p5{
-        font-size: smaller;
+        font-size: 15px;
         padding: 0px 80px;
         
     }
     .chairman{
-        width: 400px;
+        width: 500px;
         height: 200px;
-        margin-left: 40px;
+        margin-left: 0px;
         
     }
     .job h2{
@@ -272,6 +286,13 @@ border: 5px solid white;
       .placements{
         display: flex;
         flex-direction: column;
+        width: 500px;
+      }
+      #place0 img
+      {
+          height: 300px;
+          width: 300px;
+          margin-left: 40px;
       }
       #address{
         display: flex;
@@ -288,12 +309,13 @@ border: 5px solid white;
       .footer{
         display: flex;
         flex-direction: column;
+        width: 500px;
         
       }
       #carousel{
         height: 150px;
-        width: 350px;
-        margin-left: 70px;
+        width: 480px;
+        margin-left: 10px;
       }
       .head02{
         display: flex;
@@ -338,7 +360,643 @@ border: 5px solid white;
       }
       .head2{
         height: 280px;
+        display: none;
       }
+      h3,H6
+      {
+        font-size: 25px;
+      }
+      #button
+      {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px;
+      }
+      #button1
+      {
+        height: 80px;
+        border-radius: 10px;
+      }
+      .job img
+      {
+           width: 450px;
+      }
+      .col
+      {
+        padding: 0px;
+      }
+     .ecap button
+     {
+             height: 40px;
+             width: 60px;
+             border-radius: 10px;
+            background-color: orange;
+     }
+     .hello
+     {
+          font-size: 20px;
+          margin-right: 20px;
+     }
+     .head1 img 
+    {
+           width: 500px;
+           margin-left: 0px;
+    };
+    .head01
+    {
+         margin-left: 60px;
+    }
+    .head02 button
+    {
+        margin-right: 60px;
+    }
+    #navbar
+    {
+        margin-bottom: 40px;
+        
+    }
+    .navbar bg-body
+    {
+        background-color: blue;
+    }
+    /* .navbar-toggler
+    {
+       margin-right: 220px;
+    } */
+    .nav-link 
+    {
+        color: white;
+    }
+    /* .ecapbtn-outline-success button
+    {
+        color: white;
+    } */
+}
+@media ((min-width:481px) and (max-width:766px))
+{
+    header
+    {
+        width: 820px;
+    }
+    .sec2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 820px;
+       
+    }
+    .sec01 img 
+    {
+      width: 200px;
+      margin-left: 40px;
+      
+    }
+    .sec3
+    {
+        padding: 0px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .sec02{
+        padding: 0px;
+    }
+    .card{
+        padding: 30px;
+    }
+    #h4{
+        font-size: 35px;
+    }
+    .p5{
+        font-size: 25px;
+        padding: 0px 80px;
+        
+    }
+    .col
+    {
+      width: 800px;
+      height: 600px;
+    }
+    .chairman{
+        width: 820px;
+        height: 400px;
+        margin-left: 0px;
+        
+    }
+    .job h2{
+      font-size: 20px;
+      width: 820px;
+    }
+    .job img{
+        height: 200px;
+        width: 300px;
+        margin-left: 180px;
+      }
+      .place0 img 
+      {
+        margin-left: 100px;
+      }
+      .placements{
+        display: flex;
+        flex-direction: column;
+        width: 820px;
+      }
+      #address{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        width: 820px;
+        
+      }
+      #address p{
+        padding: 0px 30px;
+        text-align: center;
+        font-size: 15px;
+
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+        width: 820px;
+        
+      }
+      .sec01 img
+      {
+            height: 500px;
+            width: 600px;
+      }
+      #carousel{
+        height: 150px;
+        width: 760px;
+        margin-left: 10px;
+      }
+      .head02{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 50px;
+      }
+      .head1{
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .ser{
+        margin-left: 170px;
+      }
+      #que
+      {
+        margin-left: 170px;
+      }
+    
+      .head1 img{
+              height: 250px;
+              width: 750px;
+              margin-left: 20px;
+           
+      }
+      .icons{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+      }
+      .icons a{
+        align-items: center;
+      }
+      .head{
+        height: 150px;
+
+      }
+      #ecap{
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 5px;
+      }
+      .head002{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .head2{
+        height: 280px;
+        display: none;
+      }
+      h3,H6
+      {
+        font-size: 25px;
+      }
+      #button
+      {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px;
+        width: 760px;
+        margin-left: 25px;
+      }
+      .buttons h6,h3
+      {
+        height: 50px;
+        font-size: 35px;
+        margin-top: 30px;
+      }
+      .buttons
+      {
+        width: 760px;
+        height: 800px;
+      }
+      #button1
+      {
+        height: 80px;
+        border-radius: 10px;
+      }
+      .job img
+      {
+           width: 450px;
+      }
+      .job{
+        width: 760px;
+      }
+      .col
+      {
+        padding: 0px;
+      }
+     .ecap button
+     {
+             height: 40px;
+             width: 60px;
+             border-radius: 10px;
+            background-color: orange;
+     }
+     .hello
+     {
+          font-size: 20px;
+          margin-right: 20px;
+     }
+     .sec3{
+      width: 780px;
+     }
+     h4,.p5
+     {
+      width: 690px;
+      margin-left: 50px;
+     }
+     /* .head1 img 
+    {
+           width: 500px;
+           margin-left: 0px;
+    }; */
+    .head01
+    {
+         margin-left: 60px;
+    }
+    .head02 button
+    {
+        margin-right: 60px;
+    }
+    #navbar
+    {
+        margin-bottom: 40px;
+        
+    }
+    .navbar bg-body
+    {
+        background-color: blue;
+    }
+    /* .navbar-toggler
+    {
+       margin-right: 220px;
+    } */
+    .nav-link 
+    {
+        color: white;
+    }
+    /* .ecapbtn-outline-success button
+    {
+        color: white;
+    } */
+    #place0
+    {
+      margin-left: 120px;
+    }
+}
+@media ((min-width:767px) and (max-width:1024px))
+{
+    header
+    {
+        width: 2120px;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .sec3 h1 
+    {
+      margin-left: 0px;
+      width: 2120px;
+      font-size: 60px;
+
+    }
+
+    .sec3
+    {
+        padding: 0px;
+        margin-top: 20px;
+        margin-left: 30px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec02{
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+    .card{
+        padding: 30px;
+    }
+    #h4{
+        font-size: 55px;
+        width: 2120px;
+    }
+    .p5{
+        font-size: 55px;
+        padding: 0px 80px;
+        width: 2120px;
+        
+    }
+    .chairman{
+        width: 2180px;
+        height: 600px;
+        margin-left: 0px;
+        
+    }
+    .job
+    {
+      width: 2180px;
+    }
+    .job h2{
+      font-size: 80px;
+      margin-left:30px;
+      
+    }
+    .job img{
+        height: 300px;
+        width: 600px;
+        margin-left: 440px;
+      }
+      .placements{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        width: 2180px;
+        height: 900px;
+      }
+      #address{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        width: 2120px;
+        height: 1200px;
+        
+      }
+      #address a,p ,span{
+        padding: 0px 30px;
+        text-align: center;
+        font-size: 45px;
+
+      }
+      .footer{
+        display: flex;
+        flex-direction: column;
+        width: 2180px;
+        height: 200px;
+        
+      }
+      .sec01 img
+      {
+            height: 800px;
+            width: 900px;
+            
+            
+      }
+      #carousel{
+        height: 650px;
+        width: 2120px;
+        margin-left: 10px;
+      }
+      #mark
+      {
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+      }
+      .head02{
+        display: flex;
+        width: 2080px;
+        align-items: center;
+        margin-right: 50px;
+      }
+      .head1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 580px;
+       
+        
+      }
+      .head01{
+        margin-left: 0px;
+
+      }
+      .head1 img 
+      {
+        height: 300px;
+        width: 980px;
+        gap: 0px;
+        margin-left: 0px;
+      }
+       .ser{
+        margin-right: 0px;
+      }
+      /* #que
+      {
+       
+      }  */
+/*     
+      .head1 img{
+              height: 250px;
+              width: 750px; */
+              
+           
+      
+      .icons{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+      }
+      .icons a{
+        align-items: center;
+        height: 36;
+        width: 36;
+      }
+      .head{
+        height: 150px;
+        width: 2180px;
+       
+
+      }
+      .icons button
+      {
+        width: 290px;
+        height: 40px;
+        font-size: 20px;
+      }
+      #ecap{
+        margin-top: 10px;
+        align-items: center;
+        margin-left: 5px;
+      }
+      .head002{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .head2{
+        height: 280px;
+        display: none;
+      }
+      h3,H6
+      {
+        font-size: 65px;
+      }
+      .buttons
+      {
+        width: 2120px;
+      }
+      #button
+      {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        margin-left: 70px;
+      }
+       .bi
+      {
+       margin-right: 0px;
+      }
+      #button1
+      {
+        height: 180px;
+        font-size: 80px;
+        border-radius: 30px;
+      }
+      .job img
+      {
+           width: 450px;
+      }
+      /* .job h2 
+      {
+        width: 1380px;
+        margin-left: 0px;
+      } */
+      .place h3,h4
+      {
+        font-size: 60px;
+      }
+      .place p,li
+      {
+        font-size: 30px;
+      }
+      .place 
+      {
+        font-size: 40px;
+      }
+      .col
+      {
+        padding: 0px;
+      }
+     .ecap button
+     {
+             height: 40px;
+             width: 60px;
+             border-radius: 10px;
+            background-color: orange;
+     }
+     .hello
+     {
+          font-size: 20px;
+          margin-right: 20px;
+     }
+     /* .head1 img 
+    {
+           width: 500px;
+           margin-left: 0px;
+    }; */
+    .head01
+    {
+         margin-left: 0px;
+         display: none;
+    }
+    .head02 button
+    {
+        margin-right: 60px;
+    }
+    #navbar
+    {
+        margin-bottom: 40px;
+        width: 2180px;
+        
+    }
+    .navbar bg-body
+    {
+        background-color: blue;
+    }
+    /* .navbar-toggler
+    {
+       margin-right: 220px;
+    } */
+    .nav-link 
+    {
+        color: white;
+    }
+    /* .ecapbtn-outline-success button
+    {
+        color: white;
+    } */
+    .row
+    {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      width: 2120px;
+      
+    }
+    .col
+    {
+      height: 1350px;
+      width: 970px;
+      
+    }
+    .col p {
+      text-align: justify;
+    }
+    .col a,h5 
+    {
+      font-size: 40px;
+    }
+    .sec2
+    {
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         width: 2120px;
+    }
+    .sec02
+    {
+      width: 980px;
+      height: 150px;
+      font-size: 20px;
+      margin-right: 0px;
+    }
+    #place0
+    {
+      height: 800px;
+      margin-left: 300px;
+    }
 }
 
 

@@ -84,6 +84,6 @@ function filter()
     if(inp.value==pro.productLink)
     data.filter((pro,index) =>
     {
-         return pro(inp.value==productLink)
+         return products(inp.value==productLink)
     });
 }
