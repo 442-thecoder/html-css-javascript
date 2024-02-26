@@ -41,6 +41,7 @@ function displayData(data)
     });
 }
 const countSpan=document.getElementById('count')
+const countSpan1=document.getElementById('count1')
 function addCart(e)
  {
      const btn = e.target
@@ -48,6 +49,7 @@ function addCart(e)
      cart.push(data)
      count++;
      countSpan.textContent = count
+     countSpan1.textContent = count
     // document.getElementById('count').textContent=count;
      console.log(cart)
  }
@@ -77,13 +79,14 @@ function addCart(e)
 //          }
 //     }
 // }
+const pdiv = document.getElementById('head02')
+const inp = document.getElementById('input')
+const stn = document.getElementById('sbtn')
 function filter()
 {
-    const inp = document.getElementById('input')
-    const stn = document.getElementById('sbtn')
-    if(inp.value==pro.productLink)
-    data.filter((pro,index) =>
-    {
-         return products(inp.value==productLink)
-    });
+   data.filter((pro) =>
+   {
+    return displayData(inp.textContent=pro.title.textContent)
+   })
+     
 }
