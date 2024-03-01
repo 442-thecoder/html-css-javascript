@@ -1,20 +1,24 @@
-
+let productsData=[]
 const products = document.getElementById('productpage')
 const cartbtn = document.getElementById('cartbutton')
+const cartbtn1 = document.getElementById('cartbutton1')
 cartbtn.addEventListener("click",checkout)
+cartbtn1.addEventListener("click",checkout)
 fetch("https://fakestoreapi.com/products/")
 .then(function (res) {
     console.log(res)
     return res.json()
 })
 .then(function (data) {
-    console.log(data)
+    console.log(data);
+    productsData=data;
     displayData(data)
 })
 let count = 0;
 let cart = []
 function displayData(data)
 {
+    products.textContent=""
     data.forEach((pro,index) => {
         const product = document.createElement('div')
         const productLink= document.createElement('a')
@@ -82,11 +86,16 @@ function addCart(e)
 const pdiv = document.getElementById('head02')
 const inp = document.getElementById('input')
 const stn = document.getElementById('sbtn')
-function filter()
+function filterItems()
 {
-   data.filter((pro) =>
+    
+    alert(inp.value)
+   const values=productsData.filter((pro) =>
    {
-    return displayData(inp.textContent=pro.title.textContent)
+    console.log(pro.title)
+    return inp.value.toLowerCase()==pro.title.toLowerCase()
    })
+   console.log(values)
+   displayData(values)
      
 }

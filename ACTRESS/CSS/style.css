@@ -1,0 +1,551 @@
+html
+{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    width: 1280px;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: fixed;
+}
+#input
+{
+    margin-top: 40px;
+    margin-left: 100px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+#logoimg
+{
+    height: 100px;
+    width: 200px;
+}
+.subdiv img
+{
+      height: 200px;
+      width: 240px;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      margin: 5px;
+      border: 5px solid white;
+}
+.subdiv h3
+{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   text-align: center;
+}
+.subdiv h4
+{
+   text-align: center;
+}
+.subdiv a
+{
+   text-decoration: none;
+   color: white;
+}
+ .subdiv h4
+{
+    text-align: center;
+   
+    font-family: 'Times New Roman', Times, serif;
+
+} 
+#mainpage
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px;
+    padding: 30px;
+    padding-top: 100px;
+    
+}
+.subdiv 
+{
+    border: 1px solid;
+    height: 400px;
+    width: 260px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+    box-shadow: 5px 5px 300px 5px black;
+    
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    color: white;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+footer
+{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+   padding: 30px;
+   background-color: black;
+   color: white;
+}
+.col
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.col a{
+    text-decoration: none;
+    color: white;
+
+}
+.copyright
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+  
+   
+    
+}
+.row
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  
+   
+}
+.row img{
+    border-radius: 10px;
+}
+#icon
+{
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+}
+/* img:hover
+{
+    transform: scaleX(1.1) rotateY(180deg);
+    transition: 1s all ease-in-out;
+} */
+/* .product:hover
+{
+  transform:  scaleX(1.1) scaleY(1.1);
+  transition: 1s all ease-in; */
+/* } */
+button
+{
+    border: none;
+    border-radius: 20px;
+    background-color: #b5c1b7;
+}
+h5{
+    color: #11651f;
+}
+#app
+{
+    transform: none;
+}
+#cr
+{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color: white;
+    
+}
+#scroll
+{
+    height: 40px;
+    align-items: end;
+    justify-content: end;
+    justify-items: end;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 1200px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+ @media (max-width:480px)
+{
+    header
+    {
+        width: 1320px;
+        height: 200px;
+    }
+    #head1 
+    {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    #input
+    {
+        margin-top: 80px;
+        margin-left: 100px;
+        border: 4px solid white;
+        border-radius: 30px;
+        height: 50px;
+        width: 180px;
+        font-size:25px;
+    }
+
+    #logoimg
+    {
+        height: 200px;
+        width: 300px;
+    }
+    #sbtn 
+    {
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color:#b5c1b7 ;
+        border: 1px solid #b5c1b7;
+    }
+    .subdiv 
+    {
+        height: 800px;
+        width: 600px;
+        padding: 20px;
+        border: 10px solid white;
+    }
+    .subdiv img
+{
+      height: 460px;
+      width: 580px;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      margin: 5px;
+      border: 10px solid white;
+      
+}
+.subdiv h3
+{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   text-align: center;
+   font-size: 40px;
+}
+.subdiv h4
+{
+   text-align: center;
+   font-size: 40px;
+}
+.subdiv a
+{
+   text-decoration: none;
+   color: white;
+}
+ .subdiv h4
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+} 
+    #mainpage
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 1200px;
+        padding-top: 250px;
+    }
+    footer 
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 1260px;
+        margin-left: -10px;
+    }
+     .col
+    {
+        margin-right: 250px;
+    } 
+    #myacc
+    {
+        font-size: 50px;
+    }
+    #about
+    {
+        font-size: 50px;
+    }
+    .section-p1
+    {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        font-size: 50px;
+    
+    }
+    #app
+    {
+        height: 150px;
+        width: 250px;
+    }
+    .icon 
+    {
+        margin-left: 240px;
+    }
+    #icon
+    {
+        height: 60px;
+        
+    }
+    #follow h4
+    {
+          margin-right: 250px;
+    }
+    #contact h4 
+    {
+         margin-left: 280px;
+    }
+    #about h4
+    {
+        margin-left: 320px;
+    }
+    #myacc h4
+    {
+        margin-left: 280px;
+    }
+    .col a 
+    {
+        margin-left: 200px;
+        
+    }
+    .install
+    {
+        margin-left: 300px;
+    }
+    .install h4
+    {
+        margin-left: 180px;
+    }
+    #myacc a
+    {
+        margin-left: 160px;
+    }
+    #cr
+    {
+        width: 1320px;
+        height: 50px;
+        font-size: 40px;
+        margin-left: -10px;
+    }
+    #scroll
+    {
+        height: 100px;
+    }
+    
+
+}
+/*@media ((min-width:481px) and (max-width:766px))
+{
+
+}    header
+    {
+        width: 1340px;
+        height: 200px;
+    }
+    #head1 
+    {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    #input
+    {
+        margin-top: 80px;
+        margin-left: 100px;
+        border: 4px solid white;
+        border-radius: 30px;
+        height: 50px;
+        width: 180px;
+        font-size:25px;
+    }
+
+    #logoimg
+    {
+        height: 200px;
+        width: 300px;
+    }
+    #sbtn 
+    {
+        height: 50px;
+        width: 80px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color:#b5c1b7 ;
+        border: 1px solid #b5c1b7;
+    }
+    .subdiv 
+    {
+        height: 800px;
+        width: 500px;
+        padding: 20px;
+        border: 10px solid white;
+        margin-left: 30px;
+    }
+    .subdiv img
+{
+      height: 460px;
+      width: 480px;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      margin: 5px;
+      border: 10px solid white;
+      
+}
+.subdiv h3
+{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+   text-align: center;
+   font-size: 40px;
+}
+.subdiv h4
+{
+   text-align: center;
+   font-size: 40px;
+}
+.subdiv a
+{
+   text-decoration: none;
+   color: white;
+}
+ .subdiv h4
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+} 
+    #mainpage
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 1200px;
+        padding-top: 250px;
+        margin-left: 20px;
+    }
+    footer 
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 1280px;
+        margin-left: -10px;
+    }
+     .col
+    {
+        margin-right: 250px;
+    } 
+    #myacc
+    {
+        font-size: 50px;
+    }
+    #about
+    {
+        font-size: 50px;
+    }
+    .section-p1
+    {
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        font-size: 50px;
+    
+    }
+    #app
+    {
+        height: 150px;
+        width: 250px;
+    }
+    .icon 
+    {
+        margin-left: 240px;
+    }
+    #icon
+    {
+        height: 60px;
+        
+    }
+    #follow h4
+    {
+          margin-right: 250px;
+    }
+    #contact h4 
+    {
+         margin-left: 280px;
+    }
+    #about h4
+    {
+        margin-left: 320px;
+    }
+    #myacc h4
+    {
+        margin-left: 280px;
+    }
+    .col a 
+    {
+        margin-left: 200px;
+        
+    }
+    .install
+    {
+        margin-left: 300px;
+    }
+    .install h4
+    {
+        margin-left: 180px;
+    }
+    #myacc a
+    {
+        margin-left: 160px;
+    }
+    #cr
+    {
+        width: 1340px;
+        height: 50px;
+        font-size: 40px;
+        margin-left: -10px;
+    }
+    #scroll
+    {
+        height: 100px;
+    }@media((min-width:767px) and (max-width:1024px))
+    {
+
+    } */
+
