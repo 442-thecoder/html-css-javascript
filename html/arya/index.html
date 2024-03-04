@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: #141e30;
+        }
+        h1{
+            text-align: center;
+            margin-top: 200px;
+            font-size: 180px;
+            background-image: #141e30;
+            color: #ba8b02;
+            background-clip: text;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        ARYA
+    </h1>
+    <script>
+        
+  var typed = new Typed("#typed", {
+    stringsElement: '#typed-strings',
+    typeSpeed: 0,
+    backSpeed: 0,
+    backDelay: 500,
+    startDelay: 1000,
+    loop: false,
+    onBegin: function(self) { prettyLog('onBegin ' + self) },
+    onComplete: function(self) { prettyLog('onCmplete ' + self) },
+    preStringTyped: function(pos, self) { prettyLog('preStringTyped ' + pos + ' ' + self); },
+    onStringTyped: function(pos, self) { prettyLog('onStringTyped ' + pos + ' ' + self) },
+    onLastStringBackspaced: function(self) { prettyLog('onLastStringBackspaced ' + self) },
+    onTypingPaused: function(pos, self) { prettyLog('onTypingPaused ' + pos + ' ' + self) },
+    onTypingResumed: function(pos, self) { prettyLog('onTypingResumed ' + pos + ' ' + self) },
+    onReset: function(self) { prettyLog('onReset ' + self) },
+    onStop: function(pos, self) { prettyLog('onStop ' + pos + ' ' + self) },
+    onStart: function(pos, self) { prettyLog('onStart ' + pos + ' ' + self) },
+    onDestroy: function(self) { prettyLog('onDestroy ' + self) }
+  });
+    </script>
+    <script src="./type.js" type="text/javascript"></script>
+</body>
+</html>
