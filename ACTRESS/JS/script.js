@@ -40,7 +40,7 @@ let productsData=[]
  function filterItems()
  {
      
-     alert(inp.value)
+    //  alert(inp.value)
     const values =productsData.filter((actress) =>
     {
      console.log(actress.name)
