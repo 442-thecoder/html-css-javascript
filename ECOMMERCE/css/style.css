@@ -207,6 +207,25 @@ body{
     /* background-color: #6b757c; */
     background-color: #484F60;
 }
+#autocomplete-list {
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    width: 200px;
+    color: black;
+  }
+  #autocomplete-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  #autocomplete-list li:hover {
+    background-color: lightcyan;
+  }
 
 /* // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }

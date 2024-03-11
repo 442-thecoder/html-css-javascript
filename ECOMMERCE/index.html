@@ -65,9 +65,11 @@
        <div id="head2">
         <button id="loginbtn"><a target="_blank" href="./login.html">Login</a></button>
        </div>
-        <div id="head02">
-          <input  id="input" type="text" placeholder="Search here...."><button id="stn" onclick="filterItems()">search</button>
+        <div id="autocomplete">
+          <input onchange="filterItems()"  id="input" type="text" placeholder="Search here....">
+          <ul id="autocomplete-list"></ul>
        </div>
+       <div id="output"></div>
       
     </header>
     <main>

@@ -20,9 +20,16 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
-        <div id="head2">
-            <input id="input" type="text" placeholder="Search Here..."><span><input  onclick="filterItems()"  id="sbtn" type="submit" value="submit"></span>
+        <!-- <div id="head2">
+            <input  onchange="filterItems()"  id="input" type="text" placeholder="Search Here...">
+        </div> -->
+        
+       <div class="autocomplete">
+          <input id="input" type="text" placeholder="Enter name...">
+          <ul id="autocomplete-list"></ul>
         </div>
+    
+     <div id="output"></div>
     </header>
     <main>
         <div id="mainpage">
@@ -82,3 +89,143 @@
     <script src="./JS/script.js"></script>
 </body>
 </html>
+
+
+<!-- Creating an autocomplete search box in JavaScript typically involves a few key steps:
+
+1. **HTML Structure**: Set up the HTML structure for the input field and the container where the autocomplete results will be displayed.
+2. **Data Source**: Prepare the data source from which autocomplete suggestions will be fetched. This could be an array of options, a JSON object, or data retrieved from an API.
+3. **Event Handling**: Add event listeners to the input field to detect user input and trigger the autocomplete functionality.
+4. **Autocomplete Functionality**: Implement the logic to filter the data source based on user input and display matching suggestions in the autocomplete dropdown.
+5. **Styling**: Apply CSS styles to make the autocomplete dropdown visually appealing and user-friendly.
+
+Here's a simple example demonstrating these steps:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autocomplete Search Box</title>
+<style>
+  #autocomplete-list {
+    border: 1px solid #ccc;
+    border-top: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    width: 200px;
+  }
+  #autocomplete-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  #autocomplete-list li:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<h2>Autocomplete Search Box</h2>
+
+<div class="autocomplete">
+  <input id="myInput" type="text" placeholder="Search...">
+  <ul id="autocomplete-list"></ul>
+</div>
+
+<script>
+// Sample data source (replace this with your actual data source)
+const countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan"];
+
+// Function to populate autocomplete suggestions
+function autocomplete(input, data) {
+  let matches = [];
+  let currentFocus = -1;
+
+  // Function to close all autocomplete lists
+  function closeAllLists() {
+    const autocompleteList = document.getElementById("autocomplete-list");
+    while (autocompleteList.firstChild) {
+      autocompleteList.removeChild(autocompleteList.firstChild);
+    }
+    autocompleteList.style.display = "none";
+  }
+
+  // Function to execute when a user selects a suggestion
+  function selectSuggestion(element) {
+    input.value = element.innerText;
+    closeAllLists();
+  }
+
+  // Event listener for input field
+  input.addEventListener("input", function() {
+    closeAllLists();
+    if (!this.value) return false;
+    currentFocus = -1;
+    const fragment = document.createDocumentFragment();
+    const val = this.value.toLowerCase();
+    matches = data.filter(function(item) {
+      return item.toLowerCase().startsWith(val);
+    });
+    matches.forEach(function(match) {
+      const listItem = document.createElement("li");
+      listItem.textContent = match;
+      fragment.appendChild(listItem);
+      listItem.addEventListener("click", function() {
+        selectSuggestion(this);
+      });
+    });
+    const autocompleteList = document.getElementById("autocomplete-list");
+    autocompleteList.appendChild(fragment);
+    autocompleteList.style.display = "block";
+  });
+
+  // Event listener for keyboard navigation
+  input.addEventListener("keydown", function(e) {
+    const autocompleteList = document.getElementById("autocomplete-list");
+    const items = autocompleteList.getElementsByTagName("li");
+    if (e.keyCode == 40) { // down arrow
+      currentFocus++;
+      addActive(items);
+    } else if (e.keyCode == 38) { // up arrow
+      currentFocus--;
+      addActive(items);
+    } else if (e.keyCode == 13) { // enter key
+      e.preventDefault();
+      if (currentFocus > -1) {
+        if (items) items[currentFocus].click();
+      }
+    }
+  });
+
+  // Function to add 'autocomplete-active' class to the currently focused item
+  function addActive(items) {
+    if (!items) return false;
+    removeActive(items);
+    if (currentFocus >= items.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (items.length - 1);
+    items[currentFocus].classList.add("autocomplete-active");
+  }
+
+  // Function to remove 'autocomplete-active' class from all items
+  function removeActive(items) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.remove("autocomplete-active");
+    }
+  }
+}
+
+// Initialize autocomplete functionality
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+</body>
+</html>
+```
+
+In this example, the autocomplete functionality is implemented using JavaScript. It takes an input field and an array of countries as a data source. As the user types in the input field, matching suggestions are displayed in a dropdown below the input field. Users can navigate through suggestions using keyboard arrows and select a suggestion by clicking on it or pressing Enter. -->

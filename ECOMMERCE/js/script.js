@@ -16,34 +16,34 @@ fetch("https://fakestoreapi.com/products/")
 })
 let count = 0;
 let cart = []
-function displayData(data)
-{
-    products.textContent=""
-    data.forEach((pro,index) => {
-        const product = document.createElement('div')
-        const productLink= document.createElement('a')
-        productLink.href= `products.html?product=${encodeURIComponent(JSON.stringify(pro))}`
-        const image = document.createElement('img')
-        image.src = pro.image
-        image.alt="abc"
-        const title = document.createElement('h6')
-        title.textContent=pro.title
-        const price = document.createElement('h4')
-        price.textContent="$"+pro.price
-        const btn = document.createElement('button')
-        btn.textContent="Add to cart"
-        btn.setAttribute('data-cart', JSON.stringify(pro))
-        btn.addEventListener("click",addCart)
-        product.classList.add('product')
-        productLink.appendChild(title)
-        productLink.classList.add('prolink')
-        product.append(image,productLink,price,btn)
-        products.appendChild(product)
+// function displayData(data)
+// {
+//     products.textContent=""
+//     data.forEach((pro,index) => {
+//         const product = document.createElement('div')
+//         const productLink= document.createElement('a')
+//         productLink.href= `products.html?product=${encodeURIComponent(JSON.stringify(pro))}`
+//         const image = document.createElement('img')
+//         image.src = pro.image
+//         image.alt="abc"
+//         const title = document.createElement('h6')
+//         title.textContent=pro.title
+//         const price = document.createElement('h4')
+//         price.textContent="$"+pro.price
+//         const btn = document.createElement('button')
+//         btn.textContent="Add to cart"
+//         btn.setAttribute('data-cart', JSON.stringify(pro))
+//         btn.addEventListener("click",addCart)
+//         product.classList.add('product')
+//         productLink.appendChild(title)
+//         productLink.classList.add('prolink')
+//         product.append(image,productLink,price,btn)
+//         products.appendChild(product)
 
 
         
-    });
-}
+//     });
+// }
 const countSpan=document.getElementById('count')
 const countSpan1=document.getElementById('count1')
 function addCart(e)
@@ -83,19 +83,97 @@ function addCart(e)
 //          }
 //     }
 // }
-const pdiv = document.getElementById('head02')
-const inp = document.getElementById('input')
-const stn = document.getElementById('sbtn')
-function filterItems()
-{
+// const pdiv = document.getElementById('head02')
+// const inp = document.getElementById('input')
+// const stn = document.getElementById('sbtn')
+// function filterItems()
+// {
     
-    alert(inp.value)
-   const values=productsData.filter((pro) =>
-   {
-    console.log(pro.title)
-    return inp.value.toLowerCase()==pro.title.toLowerCase()
-   })
-   console.log(values)
-   displayData(values)
+//     alert(inp.value)
+//    const values=productsData.filter((pro) =>
+//    {
+//     console.log(pro.title)
+//     return inp.value.toLowerCase()==pro.title.toLowerCase()
+//    })
+//    console.log(values)
+//    displayData(values)
      
+// }
+
+
+
+
+
+const inp = document.getElementById('input');
+const output = document.getElementById('productpage');
+const autocompleteList = document.getElementById('autocomplete-list');
+
+// Function to filter items based on input
+function filterItems() {
+  const inputText = inp.value.toLowerCase();
+  const values = productsData.filter((pro) =>
+    pro.title.toLowerCase().includes(inputText)
+  );
+  displayData(values);
+  showAutocomplete(values);
 }
+
+// Function to display filtered data
+function displayData(data) {
+  output.innerHTML = ""; // Clear previous results
+  if (data.length === 0) {
+    output.innerHTML = "No matching items found.";
+    return;
+  }
+  data.forEach((pro,index) => {
+    const product = document.createElement('div')
+    const productLink= document.createElement('a')
+     productLink.href= `products.html?product=${encodeURIComponent(JSON.stringify(pro))}`
+     const image = document.createElement('img')
+     image.src = pro.image
+     image.alt="abc"
+     const title = document.createElement('h6')
+     title.textContent=pro.title
+     const price = document.createElement('h4')
+     price.textContent="$"+pro.price
+     const btn = document.createElement('button')
+     btn.textContent="Add to cart"
+     btn.setAttribute('data-cart', JSON.stringify(pro))
+     btn.addEventListener("click",addCart)
+     product.classList.add('product')
+     productLink.appendChild(title)
+     productLink.classList.add('prolink')
+     product.append(image,productLink,price,btn)
+     products.appendChild(product)
+  });
+}
+
+// Function to display autocomplete suggestions
+function showAutocomplete(data) {
+  autocompleteList.innerHTML = ""; // Clear previous suggestions
+  if (inp.value === "") {
+    autocompleteList.style.display = "none";
+    return;
+  }
+  data.forEach((pro) => {
+    if (pro.title.toLowerCase().includes(inp.value.toLowerCase())) {
+      const suggestion = document.createElement('li');
+      suggestion.textContent = pro.title;
+      suggestion.addEventListener('click', () => {
+        inp.value = pro.title;
+        filterItems();
+      });
+      autocompleteList.appendChild(suggestion);
+    }
+  });
+  autocompleteList.style.display = "block";
+}
+
+// Event listener for input field change
+inp.addEventListener('input', filterItems);
+
+// Event listener for input field blur (hide autocomplete when focus is lost)
+inp.addEventListener('blur', () => {
+  autocompleteList.style.display = "none";
+});
+ 
