@@ -98,18 +98,18 @@ function showAutocomplete(data) {
     autocompleteList.style.display = "none";
     return;
   }
-  data.forEach((item) => {
-    if (item.name.toLowerCase().includes(inp.value.toLowerCase())) {
-      const suggestion = document.createElement('li');
-      suggestion.textContent = item.name;
-      suggestion.addEventListener('click', () => {
-        inp.value = item.name;
-        filterItems();
-      });
-      autocompleteList.appendChild(suggestion);
-    }
-  });
-  autocompleteList.style.display = "block";
+  // data.forEach((item) => {
+  //   if (item.name.toLowerCase().includes(inp.value.toLowerCase())) {
+  //     const suggestion = document.createElement('li');
+  //     suggestion.textContent = item.name;
+  //     suggestion.addEventListener('click', () => {
+  //       inp.value = item.name;
+  //       filterItems();
+  //     });
+  //     autocompleteList.appendChild(suggestion);
+  //   }
+  // });
+  // autocompleteList.style.display = "block";
 }
 
 // Event listener for input field change

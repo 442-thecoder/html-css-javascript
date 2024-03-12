@@ -70,7 +70,7 @@ header{
 .subdiv 
 {
     border: 1px solid;
-    height: 600px;
+    height: 300px;
     width: 260px;
     align-items: center;
     justify-content: center;
@@ -549,10 +549,11 @@ a
     #scroll
     {
         height: 100px;
-    }@media((min-width:767px) and (max-width:1024px))
+    }
+    @media((min-width:767px) and (max-width:1024px))
     {
-
-    } */
+            
+    }*/
     #autocomplete-list {
         border: 1px solid #ccc;
         border-top: none;
