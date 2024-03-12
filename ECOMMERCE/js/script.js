@@ -155,18 +155,18 @@ function showAutocomplete(data) {
     autocompleteList.style.display = "none";
     return;
   }
-  data.forEach((pro) => {
-    if (pro.title.toLowerCase().includes(inp.value.toLowerCase())) {
-      const suggestion = document.createElement('li');
-      suggestion.textContent = pro.title;
-      suggestion.addEventListener('click', () => {
-        inp.value = pro.title;
-        filterItems();
-      });
-      autocompleteList.appendChild(suggestion);
-    }
-  });
-  autocompleteList.style.display = "block";
+  // data.forEach((pro) => {
+  //   if (pro.title.toLowerCase().includes(inp.value.toLowerCase())) {
+  //     const suggestion = document.createElement('li');
+  //     suggestion.textContent = pro.title;
+  //     suggestion.addEventListener('click', () => {
+  //       inp.value = pro.title;
+  //       filterItems();
+  //     });
+  //     autocompleteList.appendChild(suggestion);
+  //   }
+  // });
+  // autocompleteList.style.display = "block";
 }
 
 // Event listener for input field change
